@@ -25,7 +25,7 @@
     width: 420px;
     height: 3px;
     margin: 0 4px 3px 0;
-    border: solid 1px #d8d8d8;
+    border: solid 1px var(--grayWhite);
     align-self: center;
 }
 
@@ -40,7 +40,7 @@
 
 .headText {
     font-size: 24px;
-    color: #ff5a5a;
+    color: var(--redPink);
     margin: 16px 0 0 0;
   font-style: normal;
   line-height: 0.67;
@@ -49,13 +49,13 @@
 
 .underHeadText {
     font-size: 20px;
-    color:#9b9b9b;
+    color:var(--gray);
 }
 
 .university {
     font-size: 20px;
     margin: 10px 0 0 0;
-    color: #9b9b9b;
+    color: var(--gray);
 }
 
 
@@ -67,7 +67,7 @@
 
 .round {
     display: flex;
-    color: #5f5f5f;
+    color: var(--grayDark);
     align-items: center;
     
 }
@@ -76,7 +76,7 @@
     height: 29px;
     color: white;
     border-radius: 100%;
-    background-color: #2ecc71;
+    background-color: var(--green);
     text-align: center;
     font-size: 19px;
     margin: 0 5px;
@@ -88,7 +88,7 @@
     height: 29px;
     color: white;
     border-radius: 100%;
-    background-color: #d8d8d8;
+    background-color: var(--grayWhite);
     text-align: center;
     font-size: 19px;
     margin: 0 5px;
@@ -98,14 +98,14 @@
 .admission{
     display: flex;
     justify-content: space-between;
-    color: #ff5a5a;
+    color: var(--redPink);
 }
     
 
 .editScore {
   padding: 7px;
   border-radius: 17.5px;
-  border: solid 2px #ff5a5a;
+  border: solid 2px var(--redPink);
   font-size: 12px;
   margin: 0 24px 0 0;
   cursor: pointer;
@@ -124,7 +124,7 @@
   line-height: 1;
   letter-spacing: normal;
   text-align: left;
-  color: #48b6a3;
+  color: var(--greenBlue);
   cursor: pointer;
 }
 
@@ -140,7 +140,7 @@
 /* minmax */
 .minMaxScore {
     display: flex;
-    color: #d8d8d8;
+    color: var(--grayWhite);
     font-size: 30px;
     align-items: center;
     justify-content: center;
@@ -153,7 +153,7 @@
     line-height: 1.5;
     letter-spacing: normal;
     text-align: center;
-    color: #5f5f5f;
+    color: var(--grayDark);
     display: flex;
     flex-direction: column;
     margin: 10px 25px;
@@ -172,6 +172,6 @@
 .userInterest {
     display: flex;
     align-items: center;
-    color: #9b9b9b;
+    color: var(--gray);
     margin: 0 20px;
   }
