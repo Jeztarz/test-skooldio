@@ -22,7 +22,7 @@
 }
 
 .Path-4 {
-    width: 402px;
+    width: 420px;
     height: 3px;
     margin: 0 4px 3px 0;
     border: solid 1px #d8d8d8;
@@ -47,7 +47,7 @@
   letter-spacing: normal;
 }
 
-.underHeadTeaxt {
+.underHeadText {
     font-size: 20px;
     color:#9b9b9b;
 }
@@ -69,6 +69,7 @@
     display: flex;
     color: #5f5f5f;
     align-items: center;
+    
 }
 .Oval {
     width: 29px;
@@ -79,6 +80,7 @@
     text-align: center;
     font-size: 19px;
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .Oval2 {
@@ -90,6 +92,7 @@
     text-align: center;
     font-size: 19px;
     margin: 0 5px;
+    cursor: pointer;
   }
 
 .admission{
@@ -105,6 +108,7 @@
   border: solid 2px #ff5a5a;
   font-size: 12px;
   margin: 0 24px 0 0;
+  cursor: pointer;
 }
 
 
@@ -121,6 +125,7 @@
   letter-spacing: normal;
   text-align: left;
   color: #48b6a3;
+  cursor: pointer;
 }
 
 
