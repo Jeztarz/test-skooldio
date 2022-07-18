@@ -1,11 +1,11 @@
 import "./CardTCas.css";
 import { useEffect, useState } from "react";
-import EditScoreButton from "./EditScoreButton/EditScoreButton";
-import FooterCard from "./FooterCard/FooterCard";
-import RoundButton from "./RoundButton/RoundButton";
-import PercentScoreButton from "./PercentScoreButton/PercentScoreButton";
-import HeaderCard from "./HeaderCard/HeaderCard";
-import MinMaxScore from "./MinMaxScore/MinMaxScore";
+import HeaderCard from "./CardMaterial/HeaderCard";
+import RoundButton from "./CardMaterial/RoundButton";
+import EditScoreButton from "./CardMaterial/EditScoreButton";
+import MinMaxScore from "./CardMaterial/MinMaxScore";
+import PercentScoreButton from "./CardMaterial/PercentScoreButton";
+import FooterCard from "./CardMaterial/FooterCard";
 
 function CardTCas() {
   const [dataTest, setDataTest] = useState([]);
@@ -29,9 +29,10 @@ function CardTCas() {
           <div className="Path-4"></div>
       
           <div className="bodyCard">
-             {/* รอบที่เปิด */}
+             {/* รอบที่เปิดรับ */}
             <RoundButton />
-            {/* แก้ไขคะแนน */}
+
+            {/* edit score button */}
             <div className="admission">
               <div>
                 <p style={{ margin: "0 0 0 20px" }}>รอบที่ 4 : Admission</p>
@@ -40,7 +41,7 @@ function CardTCas() {
               <EditScoreButton />
             </div>
       
-            {/* คะแนน */}
+            {/* score */}
             <div className="yourScore">
               <div>
                 <img
@@ -69,7 +70,7 @@ function CardTCas() {
           </div>
       
           <div className="Path-4"></div>
-          {/* สัดส่วนคะแนน */}
+          {/* Percent score */}
           <PercentScoreButton />
           <div className="Path-4"></div>
       
