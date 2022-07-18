@@ -4,3 +4,7 @@
 * {
     font-family: 'Prompt', sans-serif;
 }
+
+.App-header {
+    display: flex;
+}
