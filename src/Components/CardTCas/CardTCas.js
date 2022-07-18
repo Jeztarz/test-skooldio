@@ -6,6 +6,7 @@ import EditScoreButton from "./CardMaterial/EditScoreButton";
 import MinMaxScore from "./CardMaterial/MinMaxScore";
 import PercentScoreButton from "./CardMaterial/PercentScoreButton";
 import FooterCard from "./CardMaterial/FooterCard";
+import MyScore from "./CardMaterial/MyScore";
 
 function CardTCas() {
   const [dataTest, setDataTest] = useState([]);
@@ -35,43 +36,24 @@ function CardTCas() {
             {/* edit score button */}
             <div className="admission">
               <div>
-                <p style={{ margin: "0 0 0 20px" }}>รอบที่ 4 : Admission</p>
+                <p style={{ margin: "0 0 0 20px" }}>รอบที่ 4 : {activity.score != null ? activity.score.scoreType : ''}</p>
               </div>
       
               <EditScoreButton />
             </div>
       
             {/* score */}
-            <div className="yourScore">
-              <div>
-                <img
-                  src="./medal.png"
-                  alt="medal"
-                  style={{ width: "27px", margin: "27px 35px" }}
-                />
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "flex-end",
-                  margin: "0 32px",
-                }}>
-                <span style={{ color: "#4a4a4a", fontSize: "12px" }}>
-                  คะแนนของคุณคือ
-                </span>
-                <span style={{ fontSize: "42px" }}>{activity.score != null ? activity.score.id : 0}</span>
-              </div>
-            </div>
+            <MyScore activity={activity}/>
       
             {/* min-max Score */}
             <MinMaxScore activity={activity} />
           </div>
       
           <div className="Path-4"></div>
+
           {/* Percent score */}
           <PercentScoreButton />
+
           <div className="Path-4"></div>
       
           {/* footer */}
